@@ -143,9 +143,12 @@
     <Compile Include="Models\Cidades.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CidadesMetadado.cs" />
     <Compile Include="Models\Especialidades.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EspecialidadesMetadado.cs" />
+    <Compile Include="Models\MedicosMetadado.cs" />
     <Compile Include="Models\Medicos.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -164,6 +167,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\UsuariosMetadado.cs" />
     <Compile Include="Models\Usuarios.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
