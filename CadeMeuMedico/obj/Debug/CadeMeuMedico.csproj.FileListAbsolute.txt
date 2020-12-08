@@ -70,3 +70,5 @@ C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.csproj.CopyComplete
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.dll
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.pdb
+C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\EntityFramework.dll
+C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\EntityFramework.xml
