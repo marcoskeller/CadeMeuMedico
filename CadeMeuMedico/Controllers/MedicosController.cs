@@ -27,5 +27,21 @@ namespace CadeMeuMedico.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Adicionar(Medicos medico)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Medicos.Add(medico);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.IDCidade = new SelectList(db.Cidades, "Cidade", "Nome", medico.Cidades);
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "Especialidade", "Nome", medico.Especialidades);
+
+            return View(medico);
+        }
     }
 }
