@@ -24,10 +24,26 @@ namespace CadeMeuMedico.Controllers
 
         public ActionResult Adicionar()
         {
-            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
-            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
+            ViewBag.IDCidade = new SelectList(db.Cidades, "Cidade", "Nome");
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "Especialidade", "Nome");
 
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Adicionar(Medicos medico)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Medicos.Add(medico);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.IDCidade = new SelectList(db.Cidades, "Cidade", "Nome",medico.Cidades);
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "Especialidade", "Nome", medico.Especialidades);
+
+            return View(medico);
         }
     }
 }

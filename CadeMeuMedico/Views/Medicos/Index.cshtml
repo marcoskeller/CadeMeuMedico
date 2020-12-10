@@ -7,47 +7,49 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Adicionar Novo Médico", "Adicionar")
 </p>
 <table class="table">
     <tr>
-      
-       
+
+
         <th>
             @Html.DisplayNameFor(model => model.Nome)
         </th>
-       
+        
         <th>
-            @Html.DisplayNameFor(model => model.IDCidade)
+            @Html.DisplayNameFor(model => model.Cidades)
         </th>
 
         <th>
-            @Html.DisplayNameFor(model => model.IDEspecialidade)
+            @Html.DisplayNameFor(model => model.Especialidades)
         </th>
         <th></th>
+        
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        
-        <td>
-            @Html.DisplayFor(modelItem => item.IDCidade)
-        </td>
+    @foreach (var item in Model)
+    {
+        <tr>
 
-        <td>
-            @Html.DisplayFor(modelItem => item.IDEspecialidade)
-        </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidades.Nome)
+            </td>
 
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+            <td>
+                @Html.DisplayFor(modelItem => item.Especialidades.Nome)
+            </td>
+            
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
 
 </table>
