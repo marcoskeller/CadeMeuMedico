@@ -73,5 +73,14 @@ namespace CadeMeuMedico.Controllers
 
             return View(medico);
         }
+
+        public ActionResult Detalhar(long id)
+        {
+            Medicos medico = db.Medicos.Find(id);
+
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome", medico.IDCidade);
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome", medico.IDEspecialidade);
+            return View(medico);
+        }
     }
 }
