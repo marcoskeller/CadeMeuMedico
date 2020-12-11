@@ -65,10 +65,10 @@ C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\System.Web.Helpers.xml
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\System.Web.Mvc.xml
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.csprojAssemblyReference.cache
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.csproj.CoreCompileInputs.cache
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.csproj.CopyComplete
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.dll
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.pdb
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\EntityFramework.dll
 C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\bin\EntityFramework.xml
+C:\Aprendendo a Programar\Asp .Net Core\CasaDoCodigo\CadeMeuMedico\CadeMeuMedico\obj\Debug\CadeMeuMedico.csprojAssemblyReference.cache
