@@ -63,5 +63,14 @@ namespace CadeMeuMedico.Controllers
 
             return View(cidade);
         }
+
+        public ActionResult Detalhar(long id)
+        {
+            Cidades cidade = db.Cidades.Find(id);
+
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
+
+            return View(cidade);
+        }
     }
 }
