@@ -192,6 +192,7 @@
     <Content Include="Views\Especialidades\Index.cshtml" />
     <Content Include="Views\Especialidades\Adicionar.cshtml" />
     <Content Include="Views\Especialidades\Editar.cshtml" />
+    <Content Include="Views\Especialidades\Detalhar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

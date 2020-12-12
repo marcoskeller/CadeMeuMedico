@@ -61,5 +61,13 @@ namespace CadeMeuMedico.Controllers
             ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
             return View(especialidade);
         }
+
+        public ActionResult Detalhar(long id)
+        {
+            Especialidades especialidade = db.Especialidades.Find(id);
+            ViewBag.IDEspecilaidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
+
+            return View(especialidade);
+        }
     }
 }
