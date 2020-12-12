@@ -72,5 +72,14 @@ namespace CadeMeuMedico.Controllers
 
             return View(cidade);
         }
+
+        public ActionResult Excluir(long id)
+        {
+            Cidades cidade = db.Cidades.Find(id);
+            db.Cidades.Remove(cidade);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }
