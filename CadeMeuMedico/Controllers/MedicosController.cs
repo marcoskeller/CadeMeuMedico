@@ -82,5 +82,18 @@ namespace CadeMeuMedico.Controllers
             ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome", medico.IDEspecialidade);
             return View(medico);
         }
+
+
+        
+        public ActionResult Excluir(long id)
+        {
+            Medicos medico = db.Medicos.Find(id);
+            db.Medicos.Remove(medico);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");       
+            
+        }    
+        
     }
 }
