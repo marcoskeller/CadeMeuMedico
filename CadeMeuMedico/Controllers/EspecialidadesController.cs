@@ -69,5 +69,13 @@ namespace CadeMeuMedico.Controllers
 
             return View(especialidade);
         }
+
+        public ActionResult Excluir(long id)
+        {
+            Especialidades especialidade = db.Especialidades.Find(id);
+            db.Especialidades.Remove(especialidade);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
