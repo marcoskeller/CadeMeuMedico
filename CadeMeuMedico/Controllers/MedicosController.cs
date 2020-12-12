@@ -1,9 +1,6 @@
 ﻿using CadeMeuMedico.Models;
 using System.Data;
 using System.Linq;
-using System;
-using System.Collections.Generic;
-using System.Web;
 using System.Web.Mvc;
 
 namespace CadeMeuMedico.Controllers
