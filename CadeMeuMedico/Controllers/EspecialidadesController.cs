@@ -1,6 +1,7 @@
 ﻿using CadeMeuMedico.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -36,6 +37,28 @@ namespace CadeMeuMedico.Controllers
                 return RedirectToAction("Index");
             }
 
+            return View(especialidade);
+        }
+
+        public ActionResult Editar(long id)
+        {
+            Especialidades especialidade = db.Especialidades.Find(id);
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
+
+            return View(especialidade);
+        }
+
+        [HttpPost]
+        public ActionResult Editar(Especialidades especialidade)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Entry(especialidade).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
             return View(especialidade);
         }
     }
