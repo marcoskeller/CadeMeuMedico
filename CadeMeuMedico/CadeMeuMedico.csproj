@@ -185,6 +185,7 @@
     <Content Include="Views\Medicos\Editar.cshtml" />
     <Content Include="Views\Medicos\Detalhar.cshtml" />
     <Content Include="Views\Cidades\Index.cshtml" />
+    <Content Include="Views\Cidades\Adicionar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

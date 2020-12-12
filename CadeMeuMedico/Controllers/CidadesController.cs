@@ -19,6 +19,13 @@ namespace CadeMeuMedico.Controllers
             return View(cidades);
         }
 
+        public ActionResult Adicionar()
+        {
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
+        
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Adicionar(Cidades cidade)
         {
@@ -28,7 +35,9 @@ namespace CadeMeuMedico.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View();
+            return View(cidade);
         }
+
+
     }
 }
