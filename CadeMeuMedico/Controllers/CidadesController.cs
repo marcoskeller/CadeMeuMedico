@@ -1,6 +1,7 @@
 ﻿using CadeMeuMedico.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -38,6 +39,29 @@ namespace CadeMeuMedico.Controllers
             return View(cidade);
         }
 
+        public ActionResult Editar(long id)
+        {
+            Cidades cidade = db.Cidades.Find(id);
+            
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
 
+            return View(cidade);
+        }
+
+        [HttpPost]
+        public ActionResult Editar(Cidades cidade)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Entry(cidade).State = EntityState.Modified;
+                db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
+
+            return View(cidade);
+        }
     }
 }
